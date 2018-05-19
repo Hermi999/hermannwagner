@@ -14,6 +14,7 @@
             a highly motivated <b>System/Cloud Architect</b> and <b>Full Stack Developer</b> with a strong growth mindset and the ability to learn and adapt very fast. 
             <br><br>
             Currently I show C-Levels in Austria and Switzerland how they can benefit from the Microsoft Cloud (Azure) and achieve more for their organization. This includes all kinds of digital transformation workloads from IT infrastructure and serverless app development to IoT, Machine Learning and AI.
+            <br><br>
           </v-flex>
         </v-layout>
         
@@ -57,7 +58,7 @@ a {
   overflow: hidden;
   height: 295px;
   width: 250px;
-  margin-top:10%;
+  margin-top:5%;
 }
 #personal-img {
   padding: 0px;
@@ -69,6 +70,7 @@ a {
   margin-top: 20px;
   text-align: center;
   font-size: 1.3em;
+  text-shadow: 1px 1px #000000;
 }
 
 </style>

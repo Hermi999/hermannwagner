@@ -52,7 +52,7 @@
         v-for="(item, i) in items" 
         :key="i"
         :to=item.link>
-        <v-icon v-html="item.icon" :color="item.color"></v-icon>
+          <v-icon v-html="item.icon" :color="item.color"></v-icon>
       </v-btn>
       <!--
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
@@ -82,6 +82,12 @@
     </v-navigation-drawer>
     -->
     <v-footer :fixed="fixed" height="auto" app class="footer">
+      <v-btn fab dark small color="pink" id="btn-left" absolute="true" left>
+        <v-icon dark>arrow_back_ios</v-icon>
+      </v-btn>
+      <v-btn fab dark small color="pink" id="btn-right" absolute="true" right>
+        <v-icon dark>arrow_forward_ios</v-icon>
+      </v-btn>
       <div id="footer-text">This website is a serverless Progressive Web App (PWA) and Single Page Application (SPA) based on Vue.js. </div>
     </v-footer>
   </v-app>
@@ -92,7 +98,7 @@ export default {
   data () {
     return {
       clipped: true,
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [{
         icon: 'home',
@@ -112,8 +118,8 @@ export default {
         color: 'yellow lighten-3'
       }, {
         icon: 'style',
-        title: 'Portfolio',
-        link: '/portfolio',
+        title: 'Skills',
+        link: '/skills',
         color: 'green lighten-3'
       }, {
         icon: 'mode_edit',
@@ -125,6 +131,11 @@ export default {
         title: 'Contact',
         link: '/contact',
         color: 'red lighten-3'
+      }, {
+        icon: 'settings',
+        title: 'This Website',
+        link: '/technology',
+        color: 'purple lighten-3'
       }],
       miniVariant: false,
       right: true,
@@ -152,6 +163,14 @@ export default {
     margin-bottom: 8px;
     margin-left: 5px;
     margin-right: 5px;
+  }
+  #btn-left {
+    top: -50px;
+    padding-left: 7px;
+  }
+  #btn-right {
+    top: -50px;
+    padding-left: 0px;
   }
 
 </style>

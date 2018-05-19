@@ -6,6 +6,7 @@ import router from './router'
 import {
   Vuetify,
   VApp,
+  VAvatar,
   VNavigationDrawer,
   VFooter,
   VList,
@@ -13,13 +14,20 @@ import {
   VIcon,
   VGrid,
   VToolbar,
-  transitions
+  transitions,
+  VCard,
+  VDialog,
+  VSelect,
+  VTextField,
+  VSubheader,
+  VDivider
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
 
 Vue.use(Vuetify, {
   components: {
     VApp,
+    VAvatar,
     VNavigationDrawer,
     VFooter,
     VList,
@@ -27,7 +35,13 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
-    transitions
+    transitions,
+    VCard,
+    VDialog,
+    VSelect,
+    VTextField,
+    VSubheader,
+    VDivider
   },
   theme: {
     primary: '#ccc',
