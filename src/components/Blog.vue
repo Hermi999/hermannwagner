@@ -6,7 +6,7 @@
           <v-flex sm8>
             <h2>Blog</h2>
             <br><br>
-            <b>COMING SOON ...</b>
+            <b>Coming soon ...</b>
           </v-flex>
       </v-layout>
     </v-slide-y-transition>
