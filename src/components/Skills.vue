@@ -7,10 +7,10 @@
             <h2>Skills & Portolio</h2>
             <br>
             From the computer scientists perspective I’ve covered the following range of subjects in my jobs, studies and private projects:
-            <br>
+            <br><br>
 
             <v-expansion-panel>
-              <v-expansion-panel-content v-for="(item,i) in items" :key="i">
+              <v-expansion-panel-content v-for="(item,i) in items" :key="i" :value="i === 0">
                 <div slot="header">{{item.title}}</div>
                 <v-card>
                   <v-card-text class="grey">{{item.text}}</v-card-text>
@@ -29,16 +29,20 @@
       return {
         items: [
           {
+            title: 'Cloud Services expertise',
+            text: 'Cloud Architectural Design, Azure (MCSA in Cloud Platform and Infrastructure), Office 365, Dynamics 365, Amazon Web Services'
+          },
+          {
             title: 'Software development processes',
-            text: 'iterative Waterfall, Scrum, Kanban, Rapid prototyping, ASpice'
+            text: 'Scrum, Kanban, Iterative Waterfall, Rapid prototyping, ASpice'
           },
           {
             title: 'Software planing, configuration and version management',
-            text: 'IBM Request One, eASEE, Git, Subversion (SVN)'
+            text: 'Visual Studio Team Services, Team Foundation Server, JIRA, IBM Request One, eASEE, Git, Subversion (SVN)'
           },
           {
             title: 'Platforms',
-            text: 'Engine control units (embedded system), Amazon Web Services, Android, Desktop applications, Raspberry Pie, Linux, Windows, Real time operation systems'
+            text: 'Cloud Services (Azure, Amazon Web Services), Engine control units (embedded system), Android, Desktop applications, Raspberry Pie, Linux, Windows, Real time operation systems'
           },
           {
             title: 'Requirements engineering',
@@ -46,15 +50,15 @@
           },
           {
             title: 'System and Software analysis and design',
-            text: 'UML, SysML with IBM Rhapsody, Enterprise Architect, StarUML'
+            text: 'Cloud Architectural Design and patterns, UML, SysML with IBM Rhapsody, Enterprise Architect, StarUML'
           },
           {
             title: 'Implementation',
-            text: 'C, Ruby (on rails), JavaScript (also NodeJs), Python, Java, C++, model based / driven development'
+            text: 'C#, C, Ruby (on rails), JavaScript (also NodeJs), Python, Java, C++, model based / driven development'
           },
           {
             title: 'Website structure and design',
-            text: 'HTML5, CSS3, HAML, GIMP'
+            text: 'Vue.js, HTML5, CSS3, HAML, GIMP'
           },
           {
             title: 'Software Testing',
@@ -82,11 +86,11 @@
           },
           {
             title: 'Information security',
-            text: 'malware analysis (android, rootkit, trojans), penetration testing, exploit generation, code obfuscation, product security, corporate security, Security in automotive systems and intelligent transportation systems'
+            text: 'Malware analysis (android, rootkit, trojans), penetration testing, exploit generation, code obfuscation, product security, corporate security, Security in automotive systems and intelligent transportation systems'
           },
           {
             title: 'Project management, knowledge transfer',
-            text: 'customer/stakeholder analysis and meetings, planing software deliveries, tracking work packages, tracking quality goals, effort estimation, roll out of new processes, process definition, training of new employees, training of seniors'
+            text: 'Customer/stakeholder analysis and meetings, planing software deliveries, tracking work packages, tracking quality goals, effort estimation, roll out of new processes, process definition, training of new employees, training of seniors'
           },
           {
             title: 'Special topics',

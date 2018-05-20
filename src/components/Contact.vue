@@ -167,7 +167,7 @@
           fetch('https://prod-16.westeurope.logic.azure.com:443/workflows/dc9ecea8372d425db6ad7570f7808822/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=vGEvyaP45ApfzZXw5F84JDmbYH9Omdn35KpZCdGPWyk', {
             method: 'POST',
             body: JSON.stringify({email: this.email, name: this.name, question: this.question})
-          }).then((res) => res.json())
+          }).then((res) => { this.dialog2 = false; res.json() })
             .then((data) => console.log(data))
             .catch((err) => console.error(err))
         }

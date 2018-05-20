@@ -48,6 +48,7 @@
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn 
+        class="hidden-sm-and-down"
         icon 
         v-for="(item, i) in items" 
         :key="i"
