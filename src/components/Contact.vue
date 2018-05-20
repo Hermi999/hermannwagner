@@ -68,7 +68,7 @@
           <v-dialog v-model="dialog2" max-width="500px">
             <v-card>
               <v-card-title>
-                Write me a message
+                Write me a message!
               </v-card-title>
               <v-card-text>
                 <form>
