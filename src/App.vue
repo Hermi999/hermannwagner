@@ -82,10 +82,10 @@
     </v-navigation-drawer>
     -->
     <v-footer :fixed="fixed" height="auto" app class="footer">
-      <v-btn fab dark small color="pink" id="btn-left" absolute="true" left>
+      <v-btn fab dark small color="pink" id="btn-left" absolute left>
         <v-icon dark>arrow_back_ios</v-icon>
       </v-btn>
-      <v-btn fab dark small color="pink" id="btn-right" absolute="true" right>
+      <v-btn fab dark small color="pink" id="btn-right" absolute right>
         <v-icon dark>arrow_forward_ios</v-icon>
       </v-btn>
       <div id="footer-text">This website is a serverless Progressive Web App (PWA) and Single Page Application (SPA) based on Vue.js. </div>
@@ -167,10 +167,12 @@ export default {
   #btn-left {
     top: -50px;
     padding-left: 7px;
+    display: none;
   }
   #btn-right {
     top: -50px;
     padding-left: 0px;
+    display: none;
   }
 
 </style>

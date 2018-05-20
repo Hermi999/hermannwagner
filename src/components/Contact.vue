@@ -11,7 +11,7 @@
             <v-layout row wrap id="cards">
               <v-flex d-flex md4>
                 <v-card>
-                  <v-card-media src="static/img/linkedin.png" height="160px">
+                  <v-card-media src="@/assets/linkedin.png" height="160px">
                   </v-card-media>
                   <v-card-title primary-title>
                     <div>
@@ -28,7 +28,7 @@
 
               <v-flex d-flex md4>
                 <v-card>
-                  <v-card-media src="static/img/facebook.png" height="160px">
+                  <v-card-media src="@/assets/facebook.png" height="160px">
                   </v-card-media>
                   <v-card-title primary-title>
                     <div>
@@ -45,7 +45,7 @@
 
               <v-flex d-flex md4>
                 <v-card>
-                  <v-card-media src="static/img/email.jpg" height="160px">
+                  <v-card-media src="@/assets/email.jpg" height="160px">
                   </v-card-media>
                   <v-card-title primary-title>
                     <div>
@@ -59,9 +59,12 @@
                 </v-card>
               </v-flex>
             </v-layout>
+
+            <br><br>
+            Alternatively you can also call me on: <b><a href="tel:+353 833 14 8888">+353 833 14 8888</a></b>.
           </v-flex>
 
-
+          <!-- Pop up dialog -->
           <v-dialog v-model="dialog2" max-width="500px">
             <v-card>
               <v-card-title>
@@ -107,7 +110,6 @@
               </v-card-actions>
             </v-card>
           </v-dialog>
-
 
       </v-layout>
       <br><br>

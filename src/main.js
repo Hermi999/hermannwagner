@@ -20,7 +20,8 @@ import {
   VSelect,
   VTextField,
   VSubheader,
-  VDivider
+  VDivider,
+  VExpansionPanel
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
 
@@ -41,7 +42,8 @@ Vue.use(Vuetify, {
     VSelect,
     VTextField,
     VSubheader,
-    VDivider
+    VDivider,
+    VExpansionPanel
   },
   theme: {
     primary: '#ccc',

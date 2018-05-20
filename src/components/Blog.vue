@@ -5,9 +5,8 @@
         <v-flex sm2></v-flex>
           <v-flex sm8>
             <h2>Blog</h2>
-            test tset test test tset testtest tset testtest tset testtest tset testtest tset test test tset test
             <br><br>
-            test tset testtest tset testtest tset testtest tset test test tset testtest tset test
+            <b>COMING SOON ...</b>
           </v-flex>
       </v-layout>
     </v-slide-y-transition>

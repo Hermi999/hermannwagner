@@ -5,10 +5,11 @@
         <v-flex sm2></v-flex>
           <v-flex sm8>
             <h2>My CV</h2>
-            You can find my CV below as Vector Graphic. On mobile devices you better <a href="/static/files/cv.pdf" target="_blank">open it as PDF</a>.
+            You can find my CV embedded as image. On mobile devices you better <a href="static/cv.pdf" target="_blank">open it as PDF</a>.
             <br><br>
 
-            <img id="cv" src="/static/img/cv.svg">
+            <img id="cv" src="@/assets/cv.jpg">
+
 
             <v-card></v-card>
           </v-flex>
@@ -16,6 +17,15 @@
     </v-slide-y-transition>
   </v-container>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+      }
+    }
+  }
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -46,5 +56,6 @@ a {
 
 #cv {
   box-shadow: 1px 1px 22px black;
+  width: 100%;
 }
 </style>

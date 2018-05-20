@@ -45,7 +45,7 @@
                         :size="39"
                         color="grey lighten-4"
                       >
-                        <img :src="['/static/img/icons/' + item.image]" alt="avatar">
+                        <img :src="loadImage(item.image)" alt="avatar">
                       </v-avatar>
                     </v-list-tile-avatar>
                     <v-list-tile-content>
@@ -62,7 +62,7 @@
                         :size="39"
                         color="grey lighten-4"
                       >
-                        <img :src="['/static/img/icons/' + items2.image]" alt="avatar">
+                        <img src="@/assets/azure.png" alt="avatar">
                       </v-avatar>
                     </v-list-tile-avatar>
                     <v-list-tile-content>
@@ -97,8 +97,13 @@
           iconClass: 'blue white--text',
           title: 'Total costs',
           subtitle: 'per months for hosting this website',
-          image: 'azure.png'
+          image: '@/assets/azure.png'
         }
+      }
+    },
+    methods: {
+      loadImage (imgName) {
+        return require('@/assets/' + imgName)
       }
     }
   }
