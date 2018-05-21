@@ -34,7 +34,7 @@
             <v-flex md8>
               <v-card>
                 <v-toolbar color="purple" dark>
-                  <v-toolbar-title>Costs</v-toolbar-title>
+                  <v-toolbar-title>Costs per month</v-toolbar-title>
                 </v-toolbar>
                 <v-list two-line subheader>
                   <v-list-tile v-for="item in items" :key="item.title" avatar :href="item.link" target="_blank">
@@ -52,9 +52,12 @@
                       <v-list-tile-title>{{ item.title }}</v-list-tile-title>
                       <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
                     </v-list-tile-content>
+                    <v-list-tile-action>
+                      {{ item.costs }}
+                    </v-list-tile-action>
                   </v-list-tile>
                   <v-divider inset></v-divider>
-                  <v-list-tile avatar>
+                  <v-list-tile avatar class="green lighten-3">
                     <v-list-tile-avatar>
                       <!--<v-icon :class="items2.iconClass">{{ items2.icon }}</v-icon>-->
                       <v-avatar
@@ -66,9 +69,12 @@
                       </v-avatar>
                     </v-list-tile-avatar>
                     <v-list-tile-content>
-                      <v-list-tile-title>{{ items2.title }}</v-list-tile-title>
+                      <v-list-tile-title><b>{{ items2.title }}</b></v-list-tile-title>
                       <v-list-tile-sub-title>{{ items2.subtitle }}</v-list-tile-sub-title>
                     </v-list-tile-content>
+                    <v-list-tile-action>
+                      <b>1.20 €</b>
+                    </v-list-tile-action>
                   </v-list-tile>
                 </v-list>
               </v-card>
@@ -85,12 +91,12 @@
     data () {
       return {
         items: [
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure Blob Storage', image: 'azure-blob-storage.png', link: 'https://azure.microsoft.com/en-us/services/storage/blobs/', subtitle: '100 MB' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure Logic App', image: 'azure-logic-app.png', link: 'https://azure.microsoft.com/en-us/services/logic-apps/', subtitle: '1000 calls per week' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure Functions', image: 'azure-function.jpg', link: 'https://azure.microsoft.com/en-us/services/functions/', subtitle: 'xxxxx' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure CDN', image: 'azure-cdn.png', link: 'https://azure.microsoft.com/en-us/services/cdn/', subtitle: 'xxxxx' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure CosmosDB', image: 'azure-cosmos-db.png', link: 'https://azure.microsoft.com/en-us/services/cosmos-db/', subtitle: 'xxxxx' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure AD B2C', image: 'azure-ad-b2c.png', link: 'https://azure.microsoft.com/en-us/services/active-directory-b2c/', subtitle: 'xxxxx' }
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure Blob Storage', image: 'azure-blob-storage.png', link: 'https://azure.microsoft.com/en-us/services/storage/blobs/', subtitle: '1000 MB, 10.000 write operations, 100.000 read operations ', costs: '0.10 €' },
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure Logic App', image: 'azure-logic-app.png', link: 'https://azure.microsoft.com/en-us/services/logic-apps/', subtitle: '50 calls (emails) per day, 2 standard connectors, 100 MB data storage', costs: '0.29 €' },
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure Functions', image: 'azure-function.jpg', link: 'https://azure.microsoft.com/en-us/services/functions/', subtitle: '15.000 keep alive calls with 300ms, 100.000 proxy calls with 50ms', costs: '0.00 €' },
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure CDN', image: 'azure-cdn.png', link: 'https://azure.microsoft.com/en-us/services/cdn/', subtitle: '10.000 website calls via CDN with 5MB data transmission each', costs: '1.81 €' },
+          /* { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure CosmosDB', image: 'azure-cosmos-db.png', link: 'https://azure.microsoft.com/en-us/services/cosmos-db/', subtitle: 'xxxxx', costs: '0.05 €' }, */
+          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Azure AD B2C', image: 'azure-ad-b2c.png', link: 'https://azure.microsoft.com/en-us/services/active-directory-b2c/', subtitle: '50.000 users, 50.000 authentications', costs: '0.00 €' }
         ],
         items2: {
           icon: 'assignment',
