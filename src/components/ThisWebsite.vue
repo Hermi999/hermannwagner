@@ -34,7 +34,7 @@
             <v-flex md8>
               <v-card>
                 <v-toolbar color="purple" dark>
-                  <v-toolbar-title>Costs per month</v-toolbar-title>
+                  <v-toolbar-title>Costs per month (highly supersized)</v-toolbar-title>
                 </v-toolbar>
                 <v-list two-line subheader>
                   <v-list-tile v-for="item in items" :key="item.title" avatar :href="item.link" target="_blank">
