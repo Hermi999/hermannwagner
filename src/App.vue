@@ -151,7 +151,7 @@ export default {
 
 <style>
   .content {
-    background: url("/static/img/background.jpg") no-repeat center center fixed;
+    background: url("../static/img/background.jpg") no-repeat center center fixed;
     background-size: cover; 
   }
   .footer {
